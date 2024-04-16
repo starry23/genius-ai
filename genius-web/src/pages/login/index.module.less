@@ -1,0 +1,357 @@
+.loginWarp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  // background: radial-gradient(
+  //     circle at 60% 90%,
+  //     rgba(46, 103, 161, 1),
+  //     transparent 60%
+  //   ),
+  //   radial-gradient(
+  //     circle at 20px 20px,
+  //     rgba(72, 120, 168, 0.8),
+  //     transparent 25%
+  //   ),
+  //   #182336;
+
+  :global {
+    .loginBg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .loginVideoWarp {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+
+      .loginVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .login-content {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+
+    .login_bottom-info {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      z-index: 99;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .userAgreementInfoBox {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+      display: flex;
+
+      .info_item {
+        color: rgba(152, 152, 152, 1);
+        font-size: 12px;
+        margin: 0 4px;
+        border-bottom: 1px solid #fff;
+        cursor: pointer;
+
+        &:hover {
+          color: rgba(36, 197, 255, 1);
+        }
+      }
+    }
+
+    .typeLoginBox {
+      width: 540px;
+      height: auto;
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      border-radius: 20px;
+      background: #fff;
+      backdrop-filter: blur(16px);
+
+      .login_content_webName {
+        width: 100%;
+        text-align: center;
+        /** 文本1 */
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        line-height: 34.75px;
+        color: rgba(0, 0, 0, 1);
+
+        vertical-align: top;
+      }
+
+      .logo {
+        display: block;
+        margin: 10px auto;
+        width: 80px;
+        height: 80px;
+        margin-top: 80px;
+      }
+
+      .title {
+        width: 100%;
+        text-align: center;
+
+        /** 文本1 */
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 23.17px;
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .typeLoginBox2 {
+      color: #fff;
+      background: transparent;
+
+      .login_content_webName {
+        color: #fff;
+      }
+    }
+
+    .displayLogin {
+      display: block;
+    }
+
+    .displayNone {
+      display: none;
+    }
+
+    .displayRegister {
+      display: block;
+    }
+
+    .typeLoginBox {
+      #qrCode {
+        margin-top: 30px;
+      }
+
+      .login_method-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .activeloginItem {
+          padding-bottom: 5px;
+          position: relative;
+          transition: all 0.3s ease-in-out;
+
+          .shadowIcon {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      .submitBtnText {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
+      .testContent {
+        height: 250px;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+        text-indent: 20px;
+        color: #fff;
+      }
+
+      .phoneLogin {
+        width: 100%;
+
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .phone_login-warp {
+          width: 100%;
+
+          .title {
+            width: 100%;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 30px;
+            color: hsl(49, 98%, 60%);
+          }
+
+          .content-box {
+            width: 100%;
+
+            .login_info-content {
+              width: 80%;
+              margin: 0 auto;
+
+              .input_space-warp {
+                width: 100%;
+              }
+
+              .ant-space-item {
+                padding: 4px;
+                box-sizing: border-box;
+                background: url(../../../public/assets/login/borderBg.png)
+                  no-repeat;
+                background-size: 100% 100%;
+
+                border: none;
+                overflow: hidden;
+                position: relative;
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill {
+                  transition: background-color 9999s ease-in-out 0s;
+                }
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                  -webkit-text-fill-color: #000;
+                }
+
+                // 设置边框样式
+
+                .ant-input-affix-wrapper,
+                .ant-input {
+                  border: none;
+                }
+
+                .ant-input {
+                  border: none;
+                  padding: 10px 14px;
+                }
+
+                .ant-input-affix-wrapper {
+                  padding: 0 11px 0 0;
+                }
+              }
+            }
+
+            .tools_btns {
+              width: 80%;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-between;
+              margin-top: 20px;
+              font-weight: bold;
+
+              .btns-item {
+                cursor: pointer;
+                color: #787b80;
+
+                &:hover {
+                  color: #70d9ff;
+                }
+
+                .btns-item-active {
+                  color: #70d9ff;
+                }
+              }
+            }
+          }
+        }
+
+        .verification_code-box {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          .get_verification,
+          .verification_code {
+            flex: 1;
+            height: auto;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            border-radius: 5px;
+            color: dimgray;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .wxLoginBox {
+        .title {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 0px;
+          color: hsl(49, 98%, 60%);
+        }
+
+        .refreshWxCode {
+          color: red;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .other_login-type {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .line {
+          width: 20%;
+          height: 0;
+          border: 1px dashed rgba(191, 196, 204, 1);
+        }
+
+        span {
+          width: 30%;
+          color: rgba(191, 196, 204, 1);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

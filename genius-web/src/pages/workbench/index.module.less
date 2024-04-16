@@ -1,0 +1,45 @@
+.workbenchWarp {
+    width: 100%;
+    height: 100%;
+    background: var(--g-theme-bg);
+    padding: 15px;
+    box-sizing: border-box;
+    color: var(--g-theme-color);
+
+    :global {
+        .workbench_item {
+            width: 100%;
+            background: var(--g-theme-shop-custom-card-bg);
+            padding: 10px;
+            border-radius: 8px;
+
+            .workbench_tools {
+                width: 100%;
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+
+                .workbench_tool-item {
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .workbench_tool-itemIcon {
+                        width: 35px;
+                        height: 35px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    .workbench_tool-itemName{
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 5px;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

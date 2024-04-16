@@ -1,0 +1,27 @@
+.customBtn {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    background: var(--g-theme-default-btn-bg);
+    color: var(--g-theme-default-btn-color);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+
+  
+    &:hover {
+        background: var(--g-theme-default-btn-hover-bg);
+    }
+
+
+    :global{
+        .text{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}

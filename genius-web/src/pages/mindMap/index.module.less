@@ -1,0 +1,53 @@
+.mindMapWarp {
+  flex: 1;
+  height: 100%;
+  background: var(--g-theme-bg);
+  box-sizing: border-box;
+  position: relative;
+  :global {
+    .mindMap_content {
+      width: 100%;
+      height: 100%;
+
+    }
+    .mindMap_answer {
+      width: 70%;
+      height: 80px;
+      background: var(--g-theme-subBg);
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 30px;
+
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      box-sizing: border-box;
+      .answer_templte,
+      .answer_send {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+      }
+      .answer_input {
+        flex: 1;
+        outline: none;
+        border: none;
+        background: transparent;
+        margin: 0 10px;
+        color: var(--g-theme-color);
+      }
+
+      .geneTextBox {
+        flex: 1;
+        background: transparent;
+        margin: 0 10px;
+        color: var(--g-theme-color);
+      }
+    }
+  }
+}

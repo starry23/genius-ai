@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.apeto.geniusai.server.mapper.AccountLogMapper">
+
+    <select id="selectMemberExpConsume" resultType="cn.apeto.geniusai.server.domain.vo.MemberExpConsumeVO">
+
+        select sum(1) as amount, a.account_id accountId
+        from account_log a
+        where a.create_time <![CDATA[ >=  ]]> #{startTime}
+          and a.create_time <![CDATA[ <=  ]]> #{endTime}
+          and a.log_description_type in (1051, 1033)
+          and a.direction_type = 20
+          and a.user_id = #{userId}
+        group by a.account_id
+
+    </select>
+</mapper>

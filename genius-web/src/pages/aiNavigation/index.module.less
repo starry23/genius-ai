@@ -1,0 +1,215 @@
+.aiNavigationWarp {
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: var(--g-theme-color);
+  // 设置基础背景
+  background: var(--g-theme-content-bg);
+
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    background: rgba(112, 217, 255, 0.5);
+    filter: blur(120px);
+    border-radius: 40%;
+    visibility: var(--g-theme-content-bg-circle-display);
+  }
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: 20%;
+    bottom: -250px;
+    width: 30%;
+    height: 300px;
+    opacity: 1;
+    background: rgba(112, 217, 255, 0.7);
+    filter: blur(140px);
+    border-radius: 40%;
+    visibility: var(--g-theme-content-bg-circle-display);
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  :global {
+    .aiNav_nav-box {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+
+      @media only screen and (max-width: 600px) {
+        margin-top: 10px;
+      }
+
+      .aiNav_nav-typography {
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 1.23;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+
+      .header-subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--g-theme-color);
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+      }
+
+
+
+      .aiNav_search {
+        width: 80%;
+
+        margin: 0 auto;
+        margin-top: 10px;
+
+        .ant-input {
+          color: var(--g-theme-color);
+          border-color: var(--g-theme-bordercolor) !important;
+
+          &::-webkit-input-placeholder {
+            color: var(--g-theme-bordercolor);
+          }
+        }
+      }
+    }
+
+    .aiNav_nav-tabs {
+      width: 95%;
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      margin-top: 10px;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      .nav_tabs-item {
+
+        margin: 5px;
+        background: var(--g-theme-navigation-nav-btn-bg);
+        padding: 5px 20px;
+        border-radius: 20px;
+
+        text-align: center;
+        color:  var(--g-theme-color);
+        cursor: pointer;
+        border: 1px solid var(--g-theme-navigation-nav-btn-active);
+
+        @media only screen and (max-width: 600px) {
+          border-radius: 5px;
+          width: auto;
+        }
+
+        &:hover {
+          color: var(--g-theme-navigation-nav-btn-active-color);
+          background: var(--g-theme-navigation-nav-btn-active);
+        }
+      }
+
+      .nav_tabs-item-selected {
+        color: var(--g-theme-navigation-nav-btn-active-color);
+        background: var(--g-theme-default-btn-bg);
+      }
+    }
+
+    .aiNav_nav-content {
+      width: 95%;
+      height: calc(100% - 325px);
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0px, 1fr));
+      gap: 20px;
+      margin: 0 auto;
+      margin-top: 20px;
+      position: relative;
+      z-index: 11;
+
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0px, 1fr));
+        gap: 0px;
+        margin-top: 10px;
+      }
+
+      .aiNav_nav-content-item {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--g-theme-menuBg);
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        box-shadow: var(--g-theme-content-item-shadow);
+
+        &:hover {
+          border: 2px solid var(--g-theme-chat-list-border);
+        }
+
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 10px;
+        }
+
+        .img {
+          width: 50px;
+          height: 50px;
+          display: block;
+          margin-right: 20px;
+        }
+
+        .infoBox {
+          flex: 1;
+
+          .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--g-theme-navigation-item-title);
+          }
+
+          .desc {
+            width: 70%;
+            color: var(--g-theme-navigation-item-subtitle);
+            font-size: 14px;
+            white-space: nowrap;
+
+            text-overflow: ellipsis;
+
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.question_log_list-warp {
+  width: 100%;
+  height: calc(100% - 150px);
+  padding: 10px;
+  box-sizing: border-box;
+  .question_log__list-head {
+    width: 100%;
+    .searchBox {
+      float: right;
+    }
+  }
+}

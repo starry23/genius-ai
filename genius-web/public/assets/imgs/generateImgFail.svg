@@ -1,0 +1,103 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" height="1024px" width="1024px">
+    <title>02</title>
+    <defs>
+        <radialGradient id="radialGradient-1" gradientTransform="translate(0.500000,0.024678),scale(0.663286,1.000000),rotate(91.510162),translate(-0.500000,-0.024678)" r="70.7270258%" fy="2.46779654%" fx="50%" cy="2.46779654%" cx="50%">
+            <stop offset="0%" stop-opacity="0.151561817" stop-color="#0052D9"></stop>
+            <stop offset="100%" stop-opacity="0" stop-color="#0052D9"></stop>
+        </radialGradient>
+        <linearGradient id="linearGradient-2" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="0%" stop-color="#72A0E8"></stop>
+            <stop offset="99.3995506%" stop-color="#3981F7"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-3" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="1.27618963%" stop-color="#B7D2FF"></stop>
+            <stop offset="100%" stop-color="#93BBFF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-4" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="0%" stop-color="#72A0E8"></stop>
+            <stop offset="99.3995506%" stop-color="#3981F7"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-5" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="1.27618963%" stop-color="#B7D2FF"></stop>
+            <stop offset="100%" stop-color="#93BBFF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-6" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="0%" stop-color="#72A0E8"></stop>
+            <stop offset="99.3995506%" stop-color="#3981F7"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-7" y2="100%" x2="50%" y1="0%" x1="50%">
+            <stop offset="1.27618963%" stop-color="#B7D2FF"></stop>
+            <stop offset="100%" stop-color="#93BBFF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-8" y2="28.2339305%" x2="68.6283447%" y1="6.14575786%" x1="87.4577439%">
+            <stop offset="0%" stop-color="#7DAFFF"></stop>
+            <stop offset="100%" stop-color="#4E92FF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-9" y2="91.1499023%" x2="92.9478101%" y1="6.07034117%" x1="5.21622364%">
+            <stop offset="0%" stop-color="#B2D3FF"></stop>
+            <stop offset="100%" stop-color="#8FBAFF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-10" y2="38.9959289%" x2="8.7122951%" y1="50%" x1="100%">
+            <stop offset="0%" stop-color="#77AAFF"></stop>
+            <stop offset="100%" stop-color="#B1CEFF"></stop>
+        </linearGradient>
+        <linearGradient id="linearGradient-11" y2="83.3641628%" x2="86.4013076%" y1="15.3812792%" x1="15.3052777%">
+            <stop offset="0%" stop-color="#659FFF"></stop>
+            <stop offset="100%" stop-color="#A9D0FF"></stop>
+        </linearGradient>
+        <radialGradient id="radialGradient-12" r="66.1694452%" fy="50%" fx="24.0423068%" cy="50%" cx="24.0423068%">
+            <stop offset="0%" stop-color="#F2F7FF"></stop>
+            <stop offset="100%" stop-color="#99C0FF"></stop>
+        </radialGradient>
+        <linearGradient id="linearGradient-13" y2="50%" x2="0%" y1="50%" x1="100%">
+            <stop offset="0%" stop-color="#91BBFF"></stop>
+            <stop offset="100%" stop-color="#EFF5FF"></stop>
+        </linearGradient>
+    </defs>
+    <g fill-rule="evenodd" fill="none" stroke-width="1" stroke="none" id="02">
+        <g transform="translate(91.366972, 440.000000)" id="编组">
+            <ellipse ry="279" rx="420.633028" cy="279" cx="420.633028" fill-rule="nonzero" fill="url(#radialGradient-1)" id="椭圆形"></ellipse>
+            <g id="路径" transform="translate(117.633028, 67.000000)">
+                <path fill-rule="nonzero" fill="#3F78D6" d="M20.7692308,30 C20.7692308,30 20.7692308,30 20.7692308,30 L31.1538462,30 C31.1538462,30 31.1538462,30 31.1538462,30 L31.1538462,84.6666667 C31.1538462,87.6121853 28.8291708,90 25.9615385,90 L25.9615385,90 C23.0939061,90 20.7692308,87.6121853 20.7692308,84.6666667 L20.7692308,30 Z"></path>
+                <polygon points="20.7692308 0 45 63.3333333 20.7692308 80" fill="url(#linearGradient-2)"></polygon>
+                <g fill="url(#linearGradient-3)" transform="translate(10.384615, 40.000000) scale(-1, 1) translate(-10.384615, -40.000000)">
+                    <polygon points="0 0 20.7692308 70 0 80"></polygon>
+                </g>
+            </g>
+            <g transform="translate(699.633028, 32.000000)" id="编组备份-2">
+                <path fill-rule="nonzero" fill="#3F78D6" id="路径" d="M16,23 C16,23 16,23 16,23 L24,23 C24,23 24,23 24,23 L24,65.8222222 C24,68.1295452 22.209139,70 20,70 L20,70 C17.790861,70 16,68.1295452 16,65.8222222 L16,23 Z"></path>
+                <polygon points="16 0 35 49.0833333 16 62" fill="url(#linearGradient-4)" id="路径"></polygon>
+                <g fill="url(#linearGradient-5)" transform="translate(8.000000, 31.000000) scale(-1, 1) translate(-8.000000, -31.000000)" id="编组">
+                    <polygon points="0 0 16 54.25 0 62" id="路径"></polygon>
+                </g>
+            </g>
+            <g transform="translate(173.633028, 0.000000)" id="编组备份">
+                <path fill-rule="nonzero" fill="#3F78D6" id="路径" d="M16,23 C16,23 16,23 16,23 L24,23 C24,23 24,23 24,23 L24,64 C24,66.209139 22.209139,68 20,68 L20,68 C17.790861,68 16,66.209139 16,64 L16,23 Z"></path>
+                <polygon points="16 0 34 47.5 16 60" fill="url(#linearGradient-6)" id="路径"></polygon>
+                <g fill="url(#linearGradient-7)" transform="translate(8.000000, 30.000000) scale(-1, 1) translate(-8.000000, -30.000000)" id="编组">
+                    <polygon points="0 0 16 52.5 0 60" id="路径"></polygon>
+                </g>
+            </g>
+        </g>
+        <g transform="translate(340.000000, 250.000000)" id="编组">
+            <g id="路径" transform="translate(0.000000, 117.000000)">
+                <polygon points="315.948426 228.469362 187.541924 278.275475 157.250839 264.999614 157.250839 0 335.038171 43.4237526" fill="#72A8FF"></polygon>
+                <polygon points="157.250994 264.999614 31.8254704 223.949988 14.6040821 40.8191281 157.250994 0" fill="url(#linearGradient-8)"></polygon>
+                <polygon points="14.6040821 40.8192945 14.6040821 235.823619 187.541958 282 187.541958 92.5288344" fill="url(#linearGradient-9)"></polygon>
+                <g fill-rule="nonzero" fill="#FFFAF4" transform="translate(55.595431, 154.274178)" opacity="0.800000012">
+                    <polygon points="0 0 0 11.7232769 66.5846655 34.5910792 66.5846655 22.7658576"></polygon>
+                </g>
+                <g fill-rule="nonzero" fill="#FFFAF4" transform="translate(55.595431, 196.431461)" opacity="0.800000012">
+                    <polygon points="0 0 0 11.5856657 55.4941126 34.0676471 55.4941126 21.3608727"></polygon>
+                </g>
+                <polygon points="187.541929 92.5290236 187.541929 281.999785 335.037892 229.555887 335.037892 43.4237038" fill="#82B1FF"></polygon>
+                <polygon points="187.541929 92.5290236 213.976555 179.404836 335.037892 134.374878 335.037892 43.4237038" fill="#67A1FD"></polygon>
+                <polygon points="187.541929 92.5290236 223.591151 165.394212 371 104.408958 335.037892 43.4237038" fill="url(#linearGradient-10)"></polygon>
+                <polygon points="14.604068 40.8192945 0 115.264404 187.530431 179.242489 187.530431 92.5288344" fill="#67A1FD"></polygon>
+                <polygon points="14.604068 40.8192945 0 115.264404 172.800049 157.255027 187.530431 92.5288344" fill="url(#linearGradient-11)"></polygon>
+            </g>
+            <circle r="40.5" cy="91.5" cx="164.5" fill-rule="nonzero" fill="url(#radialGradient-12)" id="椭圆形"></circle>
+            <circle r="24" cy="24" cx="284" fill-rule="nonzero" fill="url(#linearGradient-13)" id="椭圆形"></circle>
+        </g>
+    </g>
+</svg>

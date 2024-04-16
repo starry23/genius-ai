@@ -1,0 +1,136 @@
+.knowledgeBaseWarp {
+  flex: 1;
+  height: 99%;
+  overflow: auto;
+  border-radius: 5px;
+  color: var(--g-theme-color);
+
+  display: flex;
+  justify-content: space-between;
+
+  :global {
+    .knowledge_base-project {
+      width: 220px;
+      height: 100%;
+      background: var(--g-theme-menuBg);
+      padding: 10px 15px;
+
+      box-sizing: border-box;
+      border-radius: 10px;
+
+      .knowledge_proj-head {
+        width: 100%;
+
+        margin-bottom: 10px;
+
+        .head_title {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .knowledge_proj-btn {
+          height: 40px;
+          line-height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          background: var(--g-theme-knowledge-btn-bg);
+          border-radius: 5px;
+          cursor: pointer;
+          color: #70D9FF;
+          font-size: 14px;
+          font-weight: 600;
+          margin-top: 10px;
+          border: 1px solid #70D9FF;
+        }
+
+
+        .knowledge_proj-btn-disabled {
+          cursor: not-allowed;
+          background: var(--g-theme-knowledge_proj-btn-disabled);
+        }
+      }
+
+      .knowledge_proj-content {
+        width: 100%;
+        height: calc(100% - 80px);
+        overflow: auto;
+
+        .treeIcon {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          display: block;
+          margin-top: 2px;
+        }
+
+        .knowledge_proj-item {
+          width: 100%;
+          height: 40px;
+          padding: 5px;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12px;
+          cursor: pointer;
+          margin-bottom: 10px;
+          border-radius: 5px;
+
+          &:hover {
+            background: var(--g-theme-sessionBgColor);
+          }
+
+          .fileImg {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+          }
+
+          .fileName {
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            margin: 0 3px;
+          }
+
+          .fileDeleteIcon {
+            font-size: 16px;
+          }
+        }
+
+        .activeProjectItem {
+          border: 1px solid var(--g-theme-chat-list-border);
+        }
+      }
+    }
+
+    .knowledge_base-viewPdf {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--g-theme-menuBg);
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+
+      .pdfIframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+
+    .knowledge_base-chat {
+      flex: 1;
+      background: var(--g-theme-menuBg);
+      margin-left: 10px;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+.mjGenerateSetting {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  :global {
+    .base_setting {
+      width: 100%;
+      flex: 1;
+      overflow: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      background: var(--g-theme-mj-setting-bg);
+
+      .setting_box {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: var(--g-theme-color);
+
+        .title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .content {
+          display: flex;
+          justify-content: space-between;
+
+          .size_setting-item {
+            width: 15%;
+            text-align: center;
+            cursor: pointer;
+            color: var(--g-theme-color);
+            background: var(--g-theme-mj-setting-nav-bg);
+            border-radius: 6px;
+
+            img {
+              width: 25px;
+            }
+
+            padding: 5px;
+            padding-top: 10px;
+            box-sizing: border-box;
+
+            .proportion11 {
+              width: 20px;
+              height: 20px;
+              margin: 0 auto;
+              border: 2px solid rgba(229, 229, 229, 1);
+              display: block;
+            }
+
+            .proportion43 {
+              width: 20px;
+              height: 15px;
+              margin: 0 auto;
+              border: 2px solid rgba(229, 229, 229, 1);
+              margin-bottom: 5px;
+              display: block;
+            }
+
+            .proportion44 {
+              width: 15px;
+              height: 20px;
+              margin: 0 auto;
+              border: 2px solid rgba(229, 229, 229, 1);
+              display: block;
+            }
+
+            .proportion169 {
+              width: 20px;
+              height: 12px;
+              margin: 0 auto;
+              border: 2px solid rgba(229, 229, 229, 1);
+              display: block;
+              margin-bottom: 5px;
+            }
+
+            .proportion916 {
+              width: 12px;
+              height: 20px;
+              margin: 0 auto;
+              border: 2px solid rgba(229, 229, 229, 1);
+              display: block;
+            }
+          }
+
+          .selected_size_setting-item {
+            background: var(--g-theme-mj-setting-select) no-repeat;
+            background-size: 100% 100%;
+            color: var(--g-theme-color);
+          }
+        }
+      }
+
+      .setting_box-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        color: var(--g-theme-color);
+
+        .title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .flex_title {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .setting_content {
+          width: 100%;
+
+          .setting_content-item {
+            margin-bottom: 10px;
+          }
+        }
+
+        .content {
+          display: flex;
+          justify-content: space-between;
+
+          .settingBox-item {
+            width: 50%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            cursor: pointer;
+
+            .settingBox_item-shwoBox {
+              width: 100%;
+              position: relative;
+
+              .modelImg {
+                width: 100%;
+                display: block;
+              }
+
+              .modelTitle {
+                font-size: 20px;
+                font-weight: bold;
+                position: absolute;
+                bottom: 0px;
+                left: 10px;
+                color: #fff;
+              }
+            }
+
+            .settingBox_item-info {
+              font-size: 12px;
+              font-weight: 500;
+              margin-top: 10px;
+            }
+          }
+
+          .selectedModel {
+            background: url(../../../../../public/assets/mj/typeBorderBg.png) no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+
+    .account_info {
+      width: 100%;
+      height: 56px;
+      background: var(--g-theme-mj-account-bg);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .residue {
+        color: var(--g-theme-color);
+        font-weight: bold;
+      }
+
+      .buy {
+        color: rgba(255, 43, 146, 1);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}

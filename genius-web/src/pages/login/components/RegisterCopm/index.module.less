@@ -1,0 +1,212 @@
+.typeLoginBox {
+    width: 540px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    border-radius: 20px;
+    background: #fff;
+    backdrop-filter: blur(16px);
+
+    @media only screen and (max-width: 600px) {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    :global {
+        .login_content_webName {
+            width: 100%;
+            text-align: center;
+            /** 文本1 */
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            line-height: 34.75px;
+            color: rgba(0, 0, 0, 1);
+
+            vertical-align: top;
+        }
+
+
+
+        .logo {
+            display: block;
+            margin: 10px auto;
+            width: 80px;
+            height: 80px;
+            margin-top: 80px;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+            /** 文本1 */
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 0px;
+            line-height: 23.17px;
+            color: rgba(0, 0, 0, 1);
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
+        .regist_type-warp {
+            width: 74%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            border: 1px solid rgba(36, 197, 255, 1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .regist_item {
+                width: 50%;
+                height: 48px;
+                line-height: 48px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:nth-child(1) {
+                    border-right: 1px solid rgba(36, 197, 255, 1);
+                }
+            }
+
+            .activeItem {
+                background: rgba(230, 248, 255, 1);
+            }
+        }
+
+
+        .login_info-content {
+            width: 75%;
+            margin: 0 auto;
+
+            .input_space-warp {
+                width: 100%;
+
+            }
+
+
+
+            .verificationInput {
+                box-shadow: none;
+                padding: 4px;
+                box-sizing: border-box;
+                background: url(../../../../../public/assets/login/borderBg.png) no-repeat;
+                background-size: 100% 100%;
+
+                border: none;
+                overflow: hidden;
+                position: relative;
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus,
+                input:-webkit-autofill:active {
+                    -webkit-transition-delay: 111111s;
+                    -webkit-transition: color 11111s ease-out,
+                        background-color 111111s ease-out;
+                }
+
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus {
+                    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+                }
+
+                // 设置边框样式
+                .ant-input-affix-wrapper,
+                .ant-input {
+                    border: none !important;
+                }
+
+                .ant-input-password,
+                .ant-input-affix-wrapper {
+                    padding: 0 11px 0 0;
+                }
+
+
+            }
+
+
+            .ant-input:focus {
+                box-shadow: none;
+            }
+
+            .verificationInput {
+                padding: 14px 11px;
+            }
+
+            .verificationWarp {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .verificationCode {
+                width: 140px;
+                height: 48px;
+                background: rgba(230, 248, 255, 1);
+                border-radius: 8px;
+                margin: 0 auto;
+
+                color: rgba(112, 217, 255, 1);
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                cursor: pointer;
+                border: 1px solid rgba(112, 217, 255, 1);
+                border-radius: 8px;
+                margin-left: 10px;
+
+
+            }
+
+            .vcerification_code-img {
+                width: 140px;
+                height: 48px;
+                cursor: pointer;
+            }
+
+            .registBtn {
+                width: 100%;
+                height: 48px;
+                color: #fff;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+                background: rgba(36, 197, 255, 1);
+            }
+
+            .backLogin {
+                width: 100%;
+                text-align: center;
+                color: rgba(120, 123, 128, 1);
+                font-size: 14px;
+
+                margin: 30px 0;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+}

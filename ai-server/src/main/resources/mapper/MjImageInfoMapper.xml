@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.apeto.geniusai.server.mapper.MjImageInfoMapper">
+
+    <select id="trend" resultType="cn.apeto.geniusai.server.domain.vo.TrendVO">
+        select DATE_FORMAT(create_time, '%Y-%m-%d') date, count(1) count
+        from mj_image_info
+        where create_time <![CDATA[>=]]> #{start}
+        and create_time <![CDATA[<=]]> #{end}
+        <if test="fileStatus != null">
+            and file_status = #{fileStatus}
+        </if>
+        group by date
+    </select>
+</mapper>

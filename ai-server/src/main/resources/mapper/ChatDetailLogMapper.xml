@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.apeto.geniusai.server.mapper.ChatDetailLogMapper">
+  <select id="selectLastQuestion" resultType="cn.apeto.geniusai.server.domain.vo.SessionRecordVo">
+      select a.request_id                                                           reqId,
+
+             a.chat_role                                                            chatRole,
+             a.product_type                                                         productType,
+             a.role_id                                                              roleId,
+             if(a.role_id = -1, left(a.content, 20), b.role_name)                   content,
+             a.create_time                                                          createTime,
+             (select count(1) from chat_detail_log where request_id = a.request_id and chat_role in ('user','assistant')) reqCount
+      from chat_detail_log a
+               left join ai_role b on a.role_id = b.id
+      where a.id in (select min(id)
+                     from chat_detail_log
+                     where user_id = #{userId}
+                       and chat_role = #{chatRole}
+                     group by request_id)
+        and a.yn = 1 and a.product_type in (1,2,4,7,9) and a.log_type = #{logType}
+      order by a.id desc
+  </select>
+
+  <select id="trend" resultType="cn.apeto.geniusai.server.domain.vo.TrendVO">
+    select DATE_FORMAT(create_time, '%Y-%m-%d') date, count(1) count
+    from chat_detail_log
+    where create_time <![CDATA[>=]]> #{start}
+    and create_time <![CDATA[<=]]> #{end}
+    group by date
+  </select>
+</mapper>

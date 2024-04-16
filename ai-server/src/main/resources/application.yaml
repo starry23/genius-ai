@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ai-mechanician
+  profiles:
+    active: ${profile:dev} # 可不动 本地启动如果是local 请删除gpt apiHost配置
+logging:
+  file:
+    path: ${user.dir}/logs

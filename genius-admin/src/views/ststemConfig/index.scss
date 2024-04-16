@@ -1,0 +1,16 @@
+.ststem_config-warp {
+  width: 100%;
+  height: calc(100vh - 54px);
+  padding: 10px;
+  box-sizing: border-box;
+  .ststem_config-content {
+    width: 100%;
+    height: calc(100% - 50px);
+
+    .ststem_config-box {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}

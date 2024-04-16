@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
-
+/config
+/mysql-data
 # Log file
 *.log
 

@@ -1,0 +1,25 @@
+.newsWarp {
+  flex: 1;
+  background: var(--g-theme-menuBg);
+  margin-left: 10px;
+  border-radius: 5px;
+  height: 100%;
+  position: relative;
+  :global {
+    .noData {
+      width: 400px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .img {
+        display: block;
+      }
+      .info {
+        font-size: 20px;
+        text-align: center;
+        color: var(--g-theme-color);
+      }
+    }
+  }
+}

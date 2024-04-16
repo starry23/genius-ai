@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.5" height="27" viewBox="0 0 31.5 27" fill="none">
+<rect  x="0" y="2.5" width="22" height="22" rx="2"    fill="#70D9FF" >
+</rect>
+<g filter="url(#filter_1)">
+<rect  x="5" y="0.5" width="26" height="26" rx="2"    fill="#70D9FF" opacity="0.4">
+</rect>
+<rect  x="5" y="0.5" width="26" height="26" rx="2"   style="mix-blend-mode:overlay" fill="#FFFFFF" opacity="0.3">
+</rect>
+<rect  x="5" y="0.5" width="26" height="26" rx="2"   style="mix-blend-mode:soft-light" fill="#FFFFFF" opacity="0.1">
+</rect>
+<path   fill="url(#linear_0)"  d="M7 2.98023e-08L29 2.98023e-08C30.3807 2.98023e-08 31.5 1.11929 31.5 2.5L31.5 24.5C31.5 25.8807 30.3807 27 29 27L7 27C5.61929 27 4.5 25.8807 4.5 24.5L4.5 2.5C4.5 1.11929 5.61929 2.98023e-08 7 2.98023e-08ZM7 1C6.17157 1 5.5 1.67157 5.5 2.5L5.5 24.5C5.5 25.3284 6.17157 26 7 26L29 26C29.8284 26 30.5 25.3284 30.5 24.5L30.5 2.5C30.5 1.67157 29.8284 1 29 1L7 1Z">
+</path>
+</g>
+<path   fill="rgba(255, 255, 255, 1)"  d="M9.5 12.5L12.4338 12.5C13.1363 12.5 13.7873 12.8686 14.1488 13.471L15.6518 15.9761C15.6518 15.9761 15.6518 15.9761 15.6518 15.9761L17.3466 9.76202C17.8296 7.99087 20.2439 7.75181 21.0649 9.39382L22.618 12.5C22.618 12.5 22.618 12.5 22.618 12.5L26.5 12.5L26.5 14.5L22.618 14.5C21.8605 14.5 21.168 14.072 20.8292 13.3944L19.2761 10.2882C19.2761 10.2883 19.2761 10.2883 19.2761 10.2882L17.5814 16.5023C17.1179 18.2016 14.8431 18.5154 13.9368 17.005L12.4338 14.5C12.4338 14.5 12.4338 14.5 12.4338 14.5L9.5 14.5L9.5 12.5Z">
+</path>
+<defs>
+<linearGradient id="linear_0" x1="1.8518518518518516%" y1="1.8518518518518516%" x2="92.87688888888889%" y2="98.14814814814815%" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#FFFFFF" stop-opacity="0" />
+<stop offset="1" stop-color="#70D9FF"  />
+</linearGradient>
+<filter id="filter_1" x="4.5" y="0" width="27" height="27" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="feFloodId_1"/>
+<feGaussianBlur in="feFloodId_1" stdDeviation_bg="2" type="BackgroundImage" />
+<feComposite in2="SourceAlpha" operator="in" result="background_Blur_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="background_Blur_1" result="shape_1"/>
+</filter>
+</defs>
+</svg>

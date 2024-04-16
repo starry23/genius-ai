@@ -1,0 +1,149 @@
+.user_detail_mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+
+  :global {
+    .user_detail-warp {
+      width: 600px;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 10vh;
+      background: rgb(44, 44, 50);
+      padding: 20px;
+      color: #fff;
+      border-radius: 10px;
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+      }
+      .user_detail-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .head_tools {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            margin-right: 10px;
+          }
+        }
+
+        .closeBtn {
+          cursor: pointer;
+        }
+      }
+      .user_detail-content {
+        width: 100%;
+        margin-top: 20px;
+        .user_avatar {
+          width: 100px;
+          height: 100%;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50%;
+        }
+        .detail_info {
+          width: 100%;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        .invite_btn {
+          width: 100%;
+          text-align: center;
+          .ant-btn{
+            margin-bottom: 10px;
+          }
+        }
+        .navBox {
+          display: none;
+          justify-content: center;
+          margin-top: 10px;
+          @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .propose {
+            cursor: pointer;
+            margin-bottom: 5px;
+          }
+        }
+        .accent_info {
+          width: 70%;
+          margin: 0 auto;
+          margin-top: 20px;
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+          .accent_info_item {
+            width: 100%;
+            display: flex;
+            background: #39393e;
+
+            li {
+              width: 30%;
+              text-align: center;
+              padding: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+
+        .vip_content {
+          width: 100%;
+          margin: 10px 0;
+          .title {
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            .diamondVipIcon {
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+            }
+          }
+          .content {
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+
+        .accent_info_content {
+          display: flex;
+          margin-top: 0;
+          background: transparent;
+          justify-content: space-between;
+          li {
+            width: 33%;
+            text-align: center;
+            padding: 8px;
+          }
+        }
+        .user_detail_bottom {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          .tolls_btn {
+            margin: 0 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

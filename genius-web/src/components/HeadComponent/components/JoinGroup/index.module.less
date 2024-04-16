@@ -1,0 +1,89 @@
+.custom_dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  :global {
+    .custom_dialog-warp {
+      width: 540px;
+      background: var(--g-theme-dialogBg);
+      color: var(--g-theme-color);
+      padding: 20px;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 20vh;
+
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+      }
+
+      .custom_dialog-head {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+
+        .closeBtn {
+          cursor: pointer;
+        }
+      }
+
+      .title {
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+
+      .custom_dialog-content {
+        width: 100%;
+
+        text-align: center;
+
+        .ant-tabs-tab {
+          color: #fff;
+        }
+
+        .ant-tabs-tab-active {
+          color: #40a9ff;
+        }
+
+        .free_question-info {
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+        }
+
+        .user_detail_bottom {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .groupImg {
+          width: 45%;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .jonUstitle {
+          width: 80%;
+          color: var(--g-theme-dialog-subtitle);
+          font-size: 14px;
+          text-align: center;
+          margin: 20px auto;
+
+        }
+      }
+    }
+  }
+}

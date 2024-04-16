@@ -1,0 +1,35 @@
+.consumeAmount {
+  position: absolute;
+  right: 0;
+  top: -10px;
+  color: var(--g-theme-color);
+  font-size: 16px;
+  display: none;
+}
+.consumeAmountAnimate {
+  animation: consumeAmountAnimate 2s linear forwards;
+  display: block;
+}
+.consumeAmountBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consumeAmountIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+@keyframes consumeAmountAnimate {
+  form {
+    top: -10px;
+    opacity: 1;
+  }
+
+  to {
+    top: -60px;
+    opacity: 0.5;
+  }
+}

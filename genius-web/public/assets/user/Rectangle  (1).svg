@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="99"
+    viewBox="0 0 100% 99" fill="none">
+    <rect x="1.5" y="1.5" width="100%" height="100%" rx="8" fill="#FFFFFF">
+    </rect>
+    <path fill="url(#linear_0)"
+        d="M9.5 0L583.5 0C588.747 0 593 4.2533 593 9.5L593 89.5C593 94.7467 588.747 99 583.5 99L9.5 99C4.2533 99 0 94.7467 0 89.5L0 9.5C0 4.2533 4.2533 0 9.5 0ZM9.5 3C5.91015 3 3 5.91015 3 9.5L3 89.5C3 93.0899 5.91015 96 9.5 96L583.5 96C587.09 96 590 93.0899 590 89.5L590 9.5C590 5.91015 587.09 3 583.5 3L9.5 3Z">
+    </path>
+    <defs>
+        <linearGradient id="linear_0" x1="0.25295109612141653%" y1="50%" x2="99.74704890387859%" y2="50%"
+            gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00E6FF" />
+            <stop offset="1" stop-color="#FF2B92" />
+        </linearGradient>
+    </defs>
+</svg>

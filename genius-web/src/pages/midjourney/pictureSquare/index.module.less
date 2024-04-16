@@ -1,0 +1,76 @@
+.pictureSquareWarp {
+  width: 100%;
+  height: 100%;
+  background: var(--g-theme-content-bg);
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  :global {
+    .picture_square-content {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+
+      #waterfall-grid {
+        width: 100%;
+
+        @media only screen and (max-width: 600px) {
+          .show {
+            margin: 0 auto !important;
+          }
+        }
+
+        .lazyLoadImageItem {
+          width: 100%;
+          border-radius: 10px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+
+          .lazy-load-image-loaded>img {
+            transition: all 0.3s ease-in-out;
+
+          }
+
+          .image_item-tools {
+            position: absolute;
+            width: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+
+            .filePrompt {
+              width: 100%;
+              font-size: 12px;
+            }
+
+            .tools {
+              width: 100%;
+              margin-top: 10px;
+            }
+          }
+
+          &:hover {
+            .lazy-load-image-loaded>img {
+              transform: scale(1.1);
+            }
+
+            .image_item-tools {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

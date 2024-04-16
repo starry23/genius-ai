@@ -1,0 +1,42 @@
+.sys-ruleForm {
+  width: 100%;
+  height: 100%;
+  .content {
+    height: calc(100% - 50px);
+    overflow: auto;
+    .info{
+      text-align: center;
+    }
+    .dragSlortWarp {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border: 1px solid #eee;
+
+      .dragSlortContent {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+        gap: 10px;
+        .draggable {
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+          border-right: 1px solid #eee;
+          .dargBtn {
+            width: 100%;
+            height: 100%;
+            user-select: text;
+          }
+        }
+      }
+    }
+    .info {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      color: #ff7744;
+      margin-bottom: 10px;
+    }
+  }
+}

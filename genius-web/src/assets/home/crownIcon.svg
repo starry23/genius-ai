@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.30693817138672" height="27.54510498046875" viewBox="0 0 29.30693817138672 27.54510498046875" fill="none">
+<path     fill="url(#linear_fill_RKhzN6BjaVVo7v8aUBGvl_0)"  d="M15.7637 24.4113L24.0953 18.5997C24.4845 18.3229 24.2963 17.7027 23.8138 17.6944L17.2796 17.6105C16.9634 17.6088 16.7316 17.3122 16.7997 17.0058L18.5756 9.03191C18.6741 8.61249 18.2211 8.28303 17.8475 8.48527L10.4405 12.576C10.1652 12.725 9.81866 12.5922 9.7229 12.2931L7.95251 6.76772C7.79699 6.29252 7.12521 6.31035 6.99481 6.79284L4.4278 16.4713C4.37613 16.6671 4.44325 16.885 4.61525 17.0055L15.1894 24.412C15.3614 24.5325 15.5916 24.535 15.7637 24.4113Z">
+</path>
+<ellipse cx="25.386285290678103" cy="17.36661647589959" transform="rotate(35.00873571320412 23.49736785888672 15.47772216796875)" rx="1.8889174317913853" ry="1.8888943079308396"   fill="url(#linear_fill_Z10PnlPv5ELaisxphIpkN)" fill-opacity="1">
+</ellipse>
+<ellipse cx="8.823058935959612" cy="5.765235987110043" transform="rotate(35.00873541767504 6.93414306640625 3.8763427734375)" rx="1.888915869553362" ry="1.8888932136725434"   fill="url(#linear_fill_bhFisJrEfgi5S4qbmo5-O)" fill-opacity="1">
+</ellipse>
+<ellipse cx="19.89286945815857" cy="7.73966335089959" transform="rotate(35.00873571320412 18.003952026367188 5.85076904296875)" rx="1.8889174317913853" ry="1.8888943079308396"   fill="url(#linear_fill_Fv7foeEz6luOFKD4OXFfP)" fill-opacity="1">
+</ellipse>
+<defs>
+<linearGradient id="linear_fill_RKhzN6BjaVVo7v8aUBGvl_0" x1="5.395088195800781" y1="8.048332214355469" x2="23.3419189453125" y2="20.618919372558594" gradientUnits="userSpaceOnUse">
+<stop offset="0.3346" stop-color="#FFC400"  />
+<stop offset="0.4883" stop-color="#FFF200"  />
+<stop offset="0.4983" stop-color="#FFF100"  />
+<stop offset="0.6291" stop-color="#FFC400"  />
+<stop offset="0.7412" stop-color="#FFC400"  />
+<stop offset="0.9364" stop-color="#FFF200"  />
+</linearGradient>
+<linearGradient id="linear_fill_Z10PnlPv5ELaisxphIpkN" x1="23.49736785888672" y1="17.36661647589959" x2="27.27520272246949" y2="17.36661647589959" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FFC400"  />
+<stop offset="1" stop-color="#FFF200"  />
+</linearGradient>
+<linearGradient id="linear_fill_bhFisJrEfgi5S4qbmo5-O" x1="6.93414306640625" y1="5.765235987110043" x2="10.711974805512973" y2="5.765235987110043" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FFC400"  />
+<stop offset="1" stop-color="#FFF200"  />
+</linearGradient>
+<linearGradient id="linear_fill_Fv7foeEz6luOFKD4OXFfP" x1="18.003952026367188" y1="7.73966335089959" x2="21.78178688994996" y2="7.73966335089959" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#FFC400"  />
+<stop offset="1" stop-color="#FFF200"  />
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,50 @@
+.midjourneyWarp {
+  flex: 1;
+  height: 100%;
+
+  background: var(--g-theme-bg);
+
+
+  :global {
+    .midjourne-nav {
+      width: 100%;
+     
+      padding-bottom: 5px;
+
+      box-sizing: border-box;
+
+      background: var(--g-theme-mj-nav-bg);
+
+      .mj-nav_box {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .mj-nav_item {
+          font-size: 16px;
+          margin: 0 10px;
+          padding: 5px 10px;
+          box-sizing: border-box;
+          color: var(--g-theme-mj-navNoActive);
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .mj-nav_selected {
+          color: var(--g-theme-mj-btn);
+          border-bottom: 2px solid var(--g-theme-mj-btn);
+          font-weight: bold;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .midjourne-content {
+      width: 100%;
+      height: calc(100% - 45px);
+      background: var(--g-theme-bg);
+ 
+     
+    }
+  }
+}

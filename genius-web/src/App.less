@@ -1,0 +1,491 @@
+@import "~antd/dist/antd.css";
+@import "./styles/markdown.css";
+@import "./styles/prism.css";
+@import "animate.css";
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--g-theme-bg) !important;
+}
+
+:root {
+  --shadow: 50px 50px 100px 10px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+  --border-in-light: 1px solid #dedede;
+  --window-width: 90vw;
+  --window-height: 85vh;
+  --sidebar-width: 300px;
+  --window-content-width: calc(100% - var(--sidebar-width));
+  --message-max-width: 80%;
+
+  // 黑色
+  body[theme-mode="dark"] {
+
+    // 全局样式
+    // 背景颜色
+    --g-theme-bg: #101014;
+    // 菜单背景颜色
+    --g-theme-menuBg: #25272C;
+    // 文字颜色
+    --g-theme-color: #fff;
+    // 弹窗背景颜色
+    --g-theme-dialogBg: #2C2C31;
+
+    --g-theme-dialog-subtitle: #CCCCCD;
+    // 菜单选中颜色
+    --g-theme-activeMenuBg: #454545;
+
+    --g-theme-subBg: #454545;
+    // 会话背景颜色
+    --g-theme-sessionBgColor: #25272C;
+    // 高亮
+    --primary: #2196f3;
+
+    // mj 导航未选中颜色
+    --g-theme-mj-navNoActive: #fff;
+
+    // 对话框模型提示语颜色
+    --g-theme-chat-session-info-color: #63e2b7;
+
+    // 黄色
+    --g-theme-mj-btn: rgba(112, 217, 255, 1);
+
+    //边框颜色
+    --g-theme-bordercolor: #165996;
+
+    // 商品列表
+
+    // 容器背景颜色
+    --g-theme-shop-bg: '';
+
+    // 容器边框颜色
+    --g-theme-shop-boder-color: rgb(49, 45, 45);
+
+    // 标题背景
+    --g-theme-shop-title-bg: '';
+
+    // 标题字体颜色
+    --g-theme-title-color: #f4e8d8;
+
+
+    --g-theme-content-item-shadow: none;
+
+    /******************* MJ绘画 *********************/
+    --g-theme-mj-nav-bg: #303033;
+    // mj 设置菜单背景
+    --g-theme-mj-setting-bg: #18181C;
+
+    --g-theme-mj-account-bg: #1A3A49;
+
+    --g-theme-mj-setting-select: url(../public/assets/mj/borderDarkBg.png);
+    --g-theme-mj-setting-nav-bg: #303033;
+
+    /******************* 知识库 *********************/
+    --g-theme-knowledge-btn-bg: #2E4E5C;
+    --g-theme-knowledge_proj-btn-disabled:#212324;
+    --g-theme-knowledge-chat-subtitle: #CCCCCD;
+
+
+    /******************* 会员卡 *********************/
+
+    // 会员卡背景  激活状态
+    --g-theme-shop-active-card-bg: #d9f5ff;
+    // 会员卡背景普通 未激活
+    --g-theme-shop-custom-card-bg: #30323a;
+
+    // 会员卡信息展示背景
+    --g-theme-shop-info-card-bg: linear-gradient(to right,
+        #695e52 10%,
+        #606269);
+
+    // 移动端商城模块背景颜色
+    --g-theme-mobile-shop-bg: #1f2434;
+
+
+
+    // 会员卡标题字体颜色
+    --g-theme-card-title-color: #fff8f0;
+
+    // 会员卡价格字体颜色 老
+    --g-theme-shop-card-oldPrice: #CCCCCD;
+    // 会员卡价格字体颜色 新
+    --g-theme-shop-card-newPrice: #fff;
+
+    // 尊享权益未选中字体颜色
+    --g-theme-desc-custom-color: #ffffffa3;
+    // 会员卡热门商品背景
+    --g-theme-shop-card-hot-bg: url(../public/assets/commodity/darkHot.svg);
+
+    // 尊享权益选中字体颜色
+    --g-theme-desc-active-color: #fff;
+
+
+    /*********************** dalle3 选中颜色***************** */
+    --g-theme-dalle3-active-color: #fff;
+
+    --g-theme-default-btn-bg: #70D9FF;
+
+    --g-theme-default-btn-hover-bg: #32b1df;
+
+
+    /************** 聊天 ****************************/
+    --g-theme-chat-list-bg: #333;
+
+    --g-theme-default-btn-color: #fff;
+
+    --g-theme-btn-color: #d9f5ff;
+
+    // 聊天边框
+    --g-theme-chat-list-border: #70D9FF;
+
+    --g-theme-content-bg: #101014;
+    --g-theme-chat-ssession-delete-btn-bg: #1A3A49;
+    --g-theme-chat-ssession-delete-btn-color: #FF2B92;
+    --g-theme-chat-ssession-delete-btn-border: #1A3A49;
+    --g-theme-chat-title-border: #323232;
+    // 会员列表
+    --g-theme-commodity-custom-bg: #25272C;
+    --g-theme-commodity-active-bg: #16171A;
+
+    /********************* ai导航******************** */
+    --g-theme-navigation-nav-btn-bg: #1a3a49;
+    --g-theme-navigation-nav-btn-active: #70d9ff;
+    --g-theme-navigation-nav-btn-active-color: #000000;
+    --g-theme-navigation-item-title: #CCCCCD;
+    --g-theme-navigation-item-subtitle: #BFBFBF;
+
+    // 背景渐变色展示装填
+    --g-theme-content-bg-circle-display: hidden;
+
+    --g-theme-custom-input-bg: #25272C;
+
+    --g-theme-menu-light-display: none;
+    --g-theme-menu-dark-display: block;
+  }
+
+  // 白色
+  body[theme-mode="light"] {
+    // 全局样式
+    // 背景颜色
+    --g-theme-bg: #F7F9FA;
+    // 菜单背景颜色
+    --g-theme-menuBg: #FFF;
+
+
+    --g-theme-dialogBg: #FFF;
+
+    --g-theme-dialog-subtitle: #606266;
+    --g-theme-subBg: #ffffff;
+    // 文字颜色
+    --g-theme-color: #333;
+    // 菜单选中颜色
+    --g-theme-activeMenuBg: #efeffc;
+
+    // 会话背景颜色
+    --g-theme-sessionBgColor: #E6F8FF;
+    // 高亮
+    --primary: #2196f3;
+    // mj 导航未选中颜色
+    --g-theme-mj-navNoActive: #333;
+    // 对话框模型提示语颜色
+    --g-theme-chat-session-info-color: #63e2b7;
+    // 黄色
+    --g-theme-mj-btn: rgba(112, 217, 255, 1);
+    //边框颜色
+    --g-theme-bordercolor: #d9d9d9;
+
+    // 闪动样式
+    --g-theme-shakeLight: linear-gradient(120deg,
+        #efeffc 30%,
+        #efeffc 38%,
+        #f8d84943 40%,
+        #f8d84943 46%,
+        #efeffc 48%);
+
+    // 商品列表
+    // 容器背景颜色
+    --g-theme-shop-bg: #fff;
+
+    // 容器边框颜色
+    --g-theme-shop-boder-color: rgba(0, 0, 0, 0.06);
+
+
+    // 移动端商城模块背景颜色
+    --g-theme-mobile-shop-bg: #fff;
+
+    // 标题字体颜色
+    --g-theme-title-color: #a21e05;
+
+    --g-theme-content-item-shadow: 0px 1px 4px #7ACAFF;
+    /******************* MJ绘画 *********************/
+    --g-theme-mj-nav-bg: linear-gradient(90deg, rgba(225, 248, 255, 1) 20%, rgba(255, 255, 255, 1) 50%, rgba(225, 248, 255, 1) 80%);
+    // mj 设置菜单背景
+    --g-theme-mj-setting-bg: #f2f5f7;
+    --g-theme-mj-account-bg: #e6fdff;
+    --g-theme-mj-setting-select: url(../public/assets/mj/borderBg.png);
+    --g-theme-mj-setting-nav-bg: #fff;
+    /******************* 知识库 *********************/
+    --g-theme-knowledge-btn-bg: #E6F8FF;
+    --g-theme-knowledge_proj-btn-disabled:#cee6f0;
+    --g-theme-knowledge-chat-subtitle: #000000;
+
+    /******************* 会员卡 *********************/
+
+    // 会员卡背景  激活状态
+    --g-theme-shop-active-card-bg: #d9f5ff;
+    // 会员卡背景普通 未激活
+    --g-theme-shop-custom-card-bg: #fff;
+
+    // 会员卡信息展示背景
+    --g-theme-shop-info-card-bg: #d9f5ff;
+
+    // 会员卡标题颜色
+    --g-theme-card-title-color: #53B1D4;
+
+    // 会员卡价格颜色 老
+    --g-theme-shop-card-oldPrice: #999;
+    // 会员卡价格颜色 新
+    --g-theme-shop-card-newPrice: #000;
+
+    // 尊享权益未选中字体颜色
+    --g-theme-desc-custom-color: #666;
+    // 会员卡热门商品背景
+    --g-theme-shop-card-hot-bg: url(../public/assets/commodity/hotBg.svg);
+
+    // 尊享权益选中字体颜色
+    --g-theme-desc-active-color: #333;
+
+    --g-theme-dalle3-active-color: #70D9FF;
+
+
+    // 聊天 列表渐变色
+    --g-theme-chat-list-bg: linear-gradient(0deg, rgba(216, 245, 255, 0.5) 0%, rgba(216, 245, 255, 1) 34%);
+
+    --g-theme-default-btn-bg: #70D9FF;
+
+    --g-theme-default-btn-hover-bg: #32b1df;
+
+    --g-theme-default-btn-color: #fff;
+
+    --g-theme-chat-title-border: #fff;
+    // 聊天边框
+    --g-theme-chat-list-border: #70D9FF;
+
+    --g-theme-btn-color: #d9f5ff;
+
+    --g-theme-content-bg: #f8feff;
+
+
+    --g-theme-chat-ssession-delete-btn-bg: #E6FDFF;
+    --g-theme-chat-ssession-delete-btn-color: #FF2B92;
+    --g-theme-chat-ssession-delete-btn-border: #FF2B92;
+
+
+    // 会员列表
+    --g-theme-commodity-custom-bg: #FFF;
+    --g-theme-commodity-active-bg: #E6F8FF;
+    // ai导航
+    --g-theme-navigation-nav-btn-bg: #e4f8ff;
+    --g-theme-navigation-nav-btn-active: #67d5ff;
+    --g-theme-navigation-nav-btn-active-color: #fff;
+    --g-theme-navigation-item-title: #303133;
+    --g-theme-navigation-item-subtitle: #606266;
+
+
+
+
+
+
+    // 背景渐变色展示装填
+    --g-theme-content-bg-circle-display: visible;
+
+    --g-theme-custom-input-bg: #fff;
+
+    --g-theme-menu-light-display: block;
+    --g-theme-menu-dark-display: none;
+  }
+}
+
+
+
+.inputBox {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: linear-gradient(to right, rgba(0, 230, 255, 1), rgba(255, 43, 146, 1));
+
+    border-radius: 5px;
+  }
+
+  .inputDom {
+    width: 100%;
+    height: 100%;
+    background: var(--g-theme-custom-input-bg);
+    color: var(--g-theme-color);
+    position: relative;
+    z-index: 1;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding-left: 15px;
+  }
+}
+
+
+div::-webkit-scrollbar {
+  width: 4px;
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.2;
+  background: fade(@primary-color, 60%);
+}
+
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+
+// 全局消息背景颜色
+.global_message {
+  .ant-message-notice-content {
+    background: var(--g-theme-bg);
+    color: var(--g-theme-color);
+    border-radius: 5px;
+  }
+}
+
+input {
+
+  // 支持火狐
+  &:autofill {
+    background: #fff;
+  }
+
+  // 支持chrome
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    transition: background-color 5000s !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.65) !important;
+  }
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+
+
+
+  .LayoutContent {
+    width: 100%;
+    height: 100%;
+
+    .layout-content_warp {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @media only screen and (max-width: 600px) {
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .layout-content-router {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        @media only screen and (max-width: 600px) {
+          height: calc(100% - 60px);
+        }
+      }
+
+      .mobile_bottom-tabBar {
+        width: 100%;
+        height: 55px;
+        background: var(--g-theme-menuBg);
+        color: var(--g-theme-color);
+        display: none;
+
+       
+        @media only screen and (max-width: 600px) {
+          display: grid;
+          grid-template-columns: repeat(5, minmax(0px, 1fr));
+          gap: 10px;
+
+          .tabBar_item-img {
+            width: 25px;
+            height: 25px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+          }
+
+          .menuLightDisplay {
+            display: var(--g-theme-menu-light-display);
+            margin: 0 auto;
+            margin-top: 5px;
+          }
+
+          .menuDarkDisplay {
+            display: var(--g-theme-menu-dark-display);
+            margin: 0 auto;
+            margin-top: 5px;
+          }
+
+
+          .tabBar_item-name {
+            display: block;
+            width: 100%;
+            text-align: center;
+            text-overflow: ellipsis;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+
+      }
+    }
+  }
+
+  .ant-layout {
+    width: 100%;
+    height: 100% !important;
+    background: var(--g-theme-bg) !important;
+
+    .ant-layout-content {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .warp {
+    width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+
+  #map {
+    width: 100%;
+    height: 500px;
+  }
+}
